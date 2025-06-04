@@ -455,7 +455,8 @@ export function Movilbus() {
 
     const renderAsiento = (a: any) => {
         if (a.tipoObjeto === 5) return <span style={{background:'#444',color:'#fff',padding:'2px 6px',borderRadius:4,display:'inline-block'}}>p</span>;
-        if (a.tipoObjeto === 3) return <span style={{background:'#222',color:'#fff',padding:'2px 6px',borderRadius:4,display:'inline-block'}}>tv</span>;
+        if (a.tipoObjeto === 3) return <span style={{background:'#1976d2',color:'#fff',padding:'2px 6px',borderRadius:4,display:'inline-block'}}>sshh</span>;
+        if (a.tipoObjeto === 4) return <span style={{background:'#222',color:'#fff',padding:'2px 6px',borderRadius:4,display:'inline-block'}}>st</span>;
         if (a.tipoObjeto === 0) {
             const ocupado = a.estadoAsiento === 1;
             return (
@@ -512,7 +513,7 @@ export function Movilbus() {
                 <span style={{background:'#43a047',color:'#fff',padding:'2px 6px',borderRadius:4,marginRight:8}}>Libre</span>
                 <span style={{background:'#e53935',color:'#fff',padding:'2px 6px',borderRadius:4,marginRight:8}}>Ocupado</span>
                 <span style={{background:'#444',color:'#fff',padding:'2px 6px',borderRadius:4,marginRight:8}}>p: Pasillo</span>
-                <span style={{background:'#222',color:'#fff',padding:'2px 6px',borderRadius:4,marginRight:8}}>tv: TV</span>
+                <span style={{background:'#1976d2',color:'#fff',padding:'2px 6px',borderRadius:4,marginRight:8}}>sshh: Baño</span>
             </div>
         </div>
     );
