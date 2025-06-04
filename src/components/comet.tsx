@@ -436,7 +436,7 @@ export function Comet() {
                                         const elementos = posiciones[key] || [];
                                         return (
                                             <div key={xIdx + '-' + yIdx} style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', height: 32, flexDirection: 'column' }}>
-                                                {elementos.map((el, i) => renderAsiento(el))}
+                                                {elementos.map((el) => renderAsiento(el))}
                                             </div>
                                         );
                                     })
